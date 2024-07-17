@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Treat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS file -->
+    <style>
+        .card {
+            border-radius: 25px;
+        }
+
+        .logos {
+            width: 110%;
+            height: 264px;
+            display: flex;
+            margin-bottom: 0px;
+            align-items: center;
+            border-radius: 25px;
+            margin-top: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logos:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-section {
+            display: none;
+        }
+
+        .menu_head {
+            cursor: pointer;
+            color: #000;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 left-section">
+                <div class="">
+                    <div class="header-contents">
+                        <div>
+                            <img src="logo.png" alt="The Coffee Treat Logo" style="animation: fadeIn 1s ease-out;"
+                                class="logo">
+                        </div>
+
+                    </div>
+                    <br>
+                </div>
+                <div class="">
+                    <div class="header-table element fadeInUp" style="animation: fadeIn 1s ease-out;">
+                        <h1 class="headerContent">Welcome to The Coffee Treat</h1>
+                    </div>
+                    <p class="content1" style="animation: fadeIn 1s ease-out;"> <!-- Fade in animation -->
+                        At The Coffee Treat, every cup we serve embodies our commitment to excellence. We carefully
+                        select
+                        our coffee beans and teas, ensuring that each sip delivers a rich and satisfying experience.
+                    </p>
+                </div>
+
+                <h1 style="animation: fadeIn 1s ease-out;" class="menuTitle" id="menuToggle">Menu</h1>
+                <div class="menu-section" id="menuSection">
+                    <div class="row mt-4" style="gap: 10px;">
+                        <div class="col-md-6 blue">
+                            <img src="tea1.png" alt="The Coffee Treat Logo" class="logos">
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="coffee.png" alt="The Coffee Treat Logo" class="logos">
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="horlicks.png" alt="The Coffee Treat Logo" class="logos">
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="vadaa.png" alt="The Coffee Treat Logo" class="logos">
+                        </div>
+                        <hr class="styled-hr">
+                    </div>
+                </div>
+                <h1 style="animation: fadeIn 1s ease-out;" class="menuTitle" id="blog">Blog</h1>
+                <div class="menu-section" id="blogSection">
+                    <div class="row mt-4" style="gap: 10px;">
+                        <div class="col-md-6 blue">
+                            <img src="shop.jpeg" alt="The Coffee Treat Logo" class="logos1">
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="wall.jpeg" alt="The Coffee Treat Logo" class="logos1">
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="board.jpeg" alt="The Coffee Treat Logo" class="logos1">
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="first.jpeg" alt="The Coffee Treat Logo" class="logos1">
+                        </div>
+                        <hr class="styled-hr">
+                    </div>
+                </div>
+                <h1 style="animation: fadeIn 1s ease-out;" class="menuTitle" id="people">People</h1>
+                <div class="menu-section" id="peoplesSection">
+                    <div class="row mt-4" style="gap: 10px;">
+                        <div class="col-md-6 blue">
+                            <img src="image.png" alt="The Coffee Treat Logo" class="logos2">
+                        </div>
+                        <hr class="styled-hr">
+                        <div class="col-md-6 blue">
+                            <img src="ragul.jpeg" alt="The Coffee Treat Logo" class="logos3">
+                        </div>
+                        <hr class="styled-hr">
+                    </div>
+                </div>
+                <h1 style="animation: fadeIn 1s ease-out;" class="menuTitle" id="address">Address</h1>
+                <div class="menu-section" id="addressSection">
+                    <div class="row mt-4" style="gap: 10px;">
+                        <div class="col-md-6 blue">
+                            <h1 class="address">
+                                The Coffee Treat </br>
+                                Layout Rd,
+                                </br> Raj Vijay Nagar, Coimbatore
+                                </br>Mobile-9080629019,
+                                </br>9003581713
+                            </h1>
+                        </div>
+                        <div class="col-md-6 blue">
+                            <img src="out.jpeg" alt="The Coffee Treat Logo" class="logos1">
+                        </div>
+                        <hr class="styled-hr">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            var menuSection = document.getElementById('menuSection');
+            if (menuSection.style.display === 'block') {
+                menuSection.style.display = 'none';
+            } else {
+                menuSection.style.display = 'block';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('blog').addEventListener('click', function () {
+            var blogSection = document.getElementById('blogSection');
+            if (blogSection.style.display === 'block') {
+                blogSection.style.display = 'none';
+            } else {
+                blogSection.style.display = 'block';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('address').addEventListener('click', function () {
+            var addressSection = document.getElementById('addressSection');
+            if (addressSection.style.display === 'block') {
+                addressSection.style.display = 'none';
+            } else {
+                addressSection.style.display = 'block';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('people').addEventListener('click', function () {
+            var peoplesSection = document.getElementById('peoplesSection');
+            if (peoplesSection.style.display === 'block') {
+                peoplesSection.style.display = 'none';
+            } else {
+                peoplesSection.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
